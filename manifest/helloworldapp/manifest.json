@@ -1,0 +1,53 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "version": "1.5",	
+	"id": "d416189b-db2b-4a31-a716-c8de61d92f73",	
+    "packageName": "com.miracle.com",
+    "developer": {
+        "name": "Feedback-App",
+        "websiteUrl": "https://www.miracle.com",
+        "privacyUrl": "https://www.miracle.com/privacy",
+        "termsOfUseUrl": "https://www.miracle.com/termsofuse"
+    },
+    "name": {
+        "short": "Feedback and Followup",
+        "full": "This app is usefull for feedback and follwup"
+    },
+    "description": {
+        "short": "Feedback and Followup",
+        "full": "This app is usefull for feedback and follwup."
+    },
+    "icons": {
+        "outline": "contoso20x20.png",
+        "color": "contoso96x96.png"
+    },
+    "accentColor": "#60A18E",
+   
+    "bots": [{
+        "botId": "1d8f0713-b358-4f0f-9c19-b2d3fdec6220",
+        "needsChannelSelector": false,
+        "isNotificationOnly": false,
+        "scopes": [
+            "team",
+            "personal",
+            "groupchat"
+        ]
+    }],
+    "composeExtensions": [{
+        "botId": "1d8f0713-b358-4f0f-9c19-b2d3fdec6220",
+        "commands": [{
+            "id": "getRandomText",
+            "description": "Gets some random text and images that you can insert in messages for fun.",
+            "title": "Get some random text for fun",
+            "initialRun": true,
+            "parameters": [{
+                "name": "cardTitle",
+                "description": "Card title to use",
+                "title": "Card title"
+            }]
+        }]
+    }],
+    "permissions": [],
+    "validDomains": []
+}

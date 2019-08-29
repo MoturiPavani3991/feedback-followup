@@ -1,0 +1,21 @@
+{
+    "name": "mybot",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Vincent Perrin",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "botbuilder": "^3.8.4",
+        "dotenv": "^2.0.0",
+        "luis-sdk": "^1.0.1",
+        "ping": "^0.2.2",
+        "request-promise": "^4.2.4",
+        "restify": "^5.0.1",
+        "unirest": "^0.6.0",
+        "watson-developer-cloud": "^2.31.1"
+    }
+}
