@@ -5,17 +5,17 @@
 	"id": "d416189b-db2b-4a31-a716-c8de61d92f73",	
     "packageName": "com.miracle.com",
     "developer": {
-        "name": "Feedback-App",
+        "name": "L&D Smart Assistant",
         "websiteUrl": "https://www.miracle.com",
         "privacyUrl": "https://www.miracle.com/privacy",
         "termsOfUseUrl": "https://www.miracle.com/termsofuse"
     },
     "name": {
-        "short": "Feedback and Followup",
+        "short": "L&D Smart Assistant",
         "full": "This app is usefull for feedback and follwup"
     },
     "description": {
-        "short": "Feedback and Followup",
+        "short": "L&D Smart Assistant",
         "full": "This app is usefull for feedback and follwup."
     },
     "icons": {
@@ -25,7 +25,7 @@
     "accentColor": "#60A18E",
    
     "bots": [{
-        "botId": "1d8f0713-b358-4f0f-9c19-b2d3fdec6220",
+        "botId": "d416189b-db2b-4a31-a716-c8de61d92f73",
         "needsChannelSelector": false,
         "isNotificationOnly": false,
         "scopes": [
@@ -34,8 +34,15 @@
             "groupchat"
         ]
     }],
+    "configurableTabs": [{
+        "configurationUrl": "https://ford-followup-feedback-bot.azurewebsites.net/configure",
+        "canUpdateConfiguration": true,
+        "scopes": [
+            "team"
+        ]
+    }],
     "composeExtensions": [{
-        "botId": "1d8f0713-b358-4f0f-9c19-b2d3fdec6220",
+        "botId": "d416189b-db2b-4a31-a716-c8de61d92f73",
         "commands": [{
             "id": "getRandomText",
             "description": "Gets some random text and images that you can insert in messages for fun.",
